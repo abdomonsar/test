@@ -1,0 +1,13 @@
+{
+  "home": "models/home.glb",
+  "about": "models/about.glb",
+  "services": "models/services.glb",
+  "contact": "models/contact.glb",
+ "hello": "models/home.glb",
+  "welcome": "models/about.glb",
+  "to": "models/services.glb",
+  "on": "models/contact.glb",
+ "mywebsite": "models/contact.glb"
+
+  
+}

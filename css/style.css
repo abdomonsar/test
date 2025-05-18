@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+ background: rgba(190, 163, 163, 0.95);
+border: 1px solid #444;
+
+}
+
+nav {
+   background: linear-gradient(135deg, #2c3e50, #3498db);
+  padding: 1em 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ }
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+ }
+
+.nav-item {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.4s, transform 0.3s;
+ }
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #1abc9c;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #1abc9c;
+  transform: translateY(-3px);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+#viewer {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  display: none;
+  pointer-events: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  z-index: 1000;
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+ .glb-word {
+    cursor: pointer;
+  color: #4a90e2;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  
+}
+
+.glb-word:hover {
+  color: #357ABD;
+  text-decoration: underline;
+}
+
+
